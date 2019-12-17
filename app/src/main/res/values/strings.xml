@@ -1,3 +1,17 @@
 <resources>
     <string name="app_name">Teste10</string>
+
+    <string-array name="generos">
+        <item> Selecione o gênero </item>
+        <item> Masculino </item>
+        <item> Feminino </item>
+        <item> Não quero declarar </item>
+    </string-array>
+
+    <string-array name="Local">
+        <item> Rio Grande do Sul </item>
+        <item> Santa Catarina </item>
+        <item> Paraná </item>
+        <item> São Paulo </item>
+    </string-array>
 </resources>
