@@ -1,9 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
+    android:layout_width="wrap_content"
     android:layout_height="match_parent"
     android:background="#1D6D2F"
     tools:context=".MainActivity">
@@ -22,83 +21,7 @@
         app:layout_constraintBottom_toTopOf="@+id/editText2"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"/>
-
-    <Button
-        android:id="@+id/button"
-        android:layout_width="250dp"
-        android:layout_height="50dp"
-        android:layout_marginStart="90dp"
-        android:layout_marginTop="20dp"
-        android:layout_marginEnd="90dp"
-        android:background="#79DF1F"
-        android:backgroundTint="#79DF1F"
-        android:text="LOG IN"
-        android:textColor="#FFFFFF"
-        android:textSize="12sp"
-        app:layout_constraintBottom_toTopOf="@+id/button2"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/checkBox" />
-
-    <Button
-        android:id="@+id/button2"
-        android:layout_width="250dp"
-        android:layout_height="50dp"
-        android:layout_marginStart="90dp"
-        android:layout_marginTop="10dp"
-        android:layout_marginEnd="90dp"
-        android:layout_marginBottom="30dp"
-        android:background="#000000"
-        android:backgroundTint="#023803"
-        android:onClick="cadastro"
-        android:shadowColor="#00000000"
-        android:text="LIVE CHAT"
-        android:textAllCaps="true"
-        android:textColor="#FFFFFF"
-        android:textColorHighlight="#FFFFFF"
-        android:textSize="12sp"
-        app:layout_constraintBottom_toTopOf="@+id/button6"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.504"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button" />
-
-    <CheckBox
-        android:id="@+id/checkBox"
-        android:layout_width="228dp"
-        android:layout_height="30dp"
-        android:layout_marginStart="56dp"
-        android:layout_marginEnd="180dp"
-        android:layout_marginBottom="45dp"
-        android:buttonTint="#FFFFFF"
-        android:clickable="true"
-        android:cursorVisible="true"
-        android:text="Mantenha-me conectado"
-        android:textColor="#000000"
-        app:layout_constraintBottom_toTopOf="@+id/button"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editText3"></CheckBox>
-
-
-    <EditText
-        android:id="@+id/editText"
-        android:layout_width="0dp"
-        android:layout_height="45dp"
-        android:layout_marginStart="56dp"
-        android:layout_marginTop="7dp"
-        android:layout_marginEnd="56dp"
-        android:layout_marginBottom="7dp"
-        android:background="#FFFFFF"
-        android:ems="10"
-        android:hint="🔒 Senha"
-        android:inputType="textPassword"
-        app:layout_constraintBottom_toTopOf="@+id/editText3"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editText2" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
         android:id="@+id/editText2"
@@ -116,6 +39,23 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+    <EditText
+        android:id="@+id/editText"
+        android:layout_width="0dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="56dp"
+        android:layout_marginTop="7dp"
+        android:layout_marginEnd="56dp"
+        android:layout_marginBottom="7dp"
+        android:background="#FFFFFF"
+        android:ems="10"
+        android:hint="🔒 Senha"
+        android:inputType="textPassword"
+        app:layout_constraintBottom_toTopOf="@+id/editText3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editText2" />
 
     <EditText
         android:id="@+id/editText3"
@@ -152,6 +92,65 @@
         app:layout_constraintStart_toEndOf="@+id/editText3"
         app:layout_constraintTop_toBottomOf="@+id/editText" />
 
+    <CheckBox
+        android:id="@+id/checkBox"
+        android:layout_width="228dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="56dp"
+        android:layout_marginEnd="180dp"
+        android:layout_marginBottom="45dp"
+        android:buttonTint="#FFFFFF"
+        android:clickable="true"
+        android:cursorVisible="true"
+        android:text="Mantenha-me conectado"
+        android:textColor="#000000"
+        app:layout_constraintBottom_toTopOf="@+id/button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editText3"></CheckBox>
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="90dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="90dp"
+        android:background="#79DF1F"
+        android:backgroundTint="#79DF1F"
+        android:drawableEnd="@android:drawable/checkbox_on_background"
+        android:text="LOG IN"
+        android:textColor="#FFFFFF"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toTopOf="@+id/button2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/checkBox" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="90dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="90dp"
+        android:layout_marginBottom="30dp"
+        android:background="#000000"
+        android:backgroundTint="#023803"
+        android:onClick="cadastro"
+        android:shadowColor="#00000000"
+        android:text="USUÁRIO CONVIDADO"
+        android:textAllCaps="true"
+        android:textColor="#FFFFFF"
+        android:textColorHighlight="#FFFFFF"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toTopOf="@+id/button6"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.504"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button" />
+
     <Button
         android:id="@+id/button6"
         android:layout_width="0dp"
@@ -161,7 +160,13 @@
         android:layout_marginEnd="150dp"
         android:layout_marginBottom="10dp"
         android:background="#00000000"
+        android:drawableStart="?attr/actionModeShareDrawable"
+        android:drawableTint="#FFFFFF"
+        android:drawingCacheQuality="auto"
         android:text="Share"
+        android:textColor="#FFFFFF"
+        android:textCursorDrawable="@color/colorAccent"
+        android:visibility="visible"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"

@@ -20,5 +20,5 @@ public class MainActivity extends AppCompatActivity {
         Intent intent = new Intent(this, Cadastro.class);
         startActivity(intent);
     }
-    Spinner spinner = {Spinner} findViewById
+    //Spinner spinner = {Spinner} findViewById
 }
