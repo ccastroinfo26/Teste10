@@ -53,7 +53,7 @@
         android:layout_height="20dp"
         android:layout_marginStart="50dp"
         android:layout_marginTop="40dp"
-        android:text="MENSAGEM DE APRESENTAÇÃO:"
+        android:text="MENSAGEM:"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/mostrarTelefone" />
 
@@ -65,15 +65,14 @@
         android:layout_marginTop="40dp"
         android:text="SENHA:"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/mostrarMensagemApres" />
+        app:layout_constraintTop_toBottomOf="@+id/textViewMensagem" />
 
     <TextView
         android:id="@+id/textViewNome"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_height="20dp"
         android:layout_marginStart="10dp"
         android:layout_marginTop="70dp"
-        android:text="TextView"
         app:layout_constraintStart_toEndOf="@+id/mostrarNome"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -83,17 +82,15 @@
         android:layout_height="20dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="40dp"
-        android:text="TEXTVIEW"
         app:layout_constraintStart_toEndOf="@+id/mostrarEmail"
         app:layout_constraintTop_toBottomOf="@+id/textViewNome" />
 
     <TextView
         android:id="@+id/textViewDataNasc"
         android:layout_width="wrap_content"
-        android:layout_height="0dp"
+        android:layout_height="20dp"
         android:layout_marginStart="8dp"
-        android:layout_marginTop="42dp"
-        android:text="TextView"
+        android:layout_marginTop="40dp"
         app:layout_constraintStart_toEndOf="@+id/mostrarDataNasc"
         app:layout_constraintTop_toBottomOf="@+id/textViewEmail" />
 
@@ -103,17 +100,17 @@
         android:layout_height="20dp"
         android:layout_marginStart="10dp"
         android:layout_marginTop="40dp"
-        android:text="TextView"
         app:layout_constraintStart_toEndOf="@+id/mostrarTelefone"
         app:layout_constraintTop_toBottomOf="@+id/mostrarDataNasc" />
 
     <TextView
         android:id="@+id/textViewMensagem"
-        android:layout_width="wrap_content"
+        android:layout_width="220dp"
         android:layout_height="0dp"
         android:layout_marginStart="10dp"
         android:layout_marginTop="40dp"
-        android:text="TextView"
+        android:layout_marginEnd="50dp"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/mostrarMensagemApres"
         app:layout_constraintTop_toBottomOf="@+id/textViewTelefone" />
 
@@ -123,8 +120,7 @@
         android:layout_height="20dp"
         android:layout_marginStart="10dp"
         android:layout_marginTop="40dp"
-        android:text="TextView"
         app:layout_constraintStart_toEndOf="@+id/mostrarSenha"
-        app:layout_constraintTop_toBottomOf="@+id/mostrarMensagemApres" />
+        app:layout_constraintTop_toBottomOf="@+id/textViewMensagem" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
