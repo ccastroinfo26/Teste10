@@ -24,6 +24,7 @@ public class Formulario extends AppCompatActivity {
     }
 
     public void telaResultado(View view) {
+        //declara variaveis que vão pegar os campos
         nome = findViewById(R.id.nome);
         email = findViewById(R.id.email);
         dataNasc = findViewById(R.id.dataNascimento);
@@ -42,6 +43,7 @@ public class Formulario extends AppCompatActivity {
 
         Intent intent = new Intent(this, Resultado.class);
 
+        //envia campos para proxima activity
         intent.putExtra("nome", nomeTexto);
         intent.putExtra("email", emailTexto);
         intent.putExtra("dataNasc",dataNascTexto);

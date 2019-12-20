@@ -21,9 +21,10 @@ public class Resultado extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_resultado);
 
+        //verifica se foram passados parâmetros na tela
         Bundle bundle = getIntent().getExtras();
-        if (bundle != null)
-        {
+        if (bundle != null) {
+            //pega os valores passados pela tela
             String nome = bundle.getString("nome");
             String email = bundle.getString("email");
             String dataNasc = bundle.getString("dataNasc");
@@ -32,6 +33,7 @@ public class Resultado extends AppCompatActivity {
             String senha = bundle.getString("senha");
             String vontade = bundle.getString("vontade");
 
+            //busca o campo na activity e adiciona o texto vindo de outra tela a ele
             nomeCampo = findViewById(R.id.textViewNome);
             nomeCampo.setText(nome);
 
