@@ -14,6 +14,7 @@ public class Resultado extends AppCompatActivity {
     public TextView telefoneCampo;
     public TextView mensagemCampo;
     public TextView senhaCampo;
+    public TextView vontadeCampo;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -29,6 +30,7 @@ public class Resultado extends AppCompatActivity {
             String telefone = bundle.getString("telefone");
             String mensagem = bundle.getString("mensagem");
             String senha = bundle.getString("senha");
+            String vontade = bundle.getString("vontade");
 
             nomeCampo = findViewById(R.id.textViewNome);
             nomeCampo.setText(nome);
@@ -47,6 +49,9 @@ public class Resultado extends AppCompatActivity {
 
             senhaCampo = findViewById(R.id.textViewSenha);
             senhaCampo.setText(senha);
+
+            vontadeCampo = findViewById(R.id.textViewVontade);
+            vontadeCampo.setText(vontade);
         }
     }
 }
